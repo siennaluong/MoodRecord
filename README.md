@@ -1,4 +1,4 @@
-# MoodRecord
+# MoodRecord - Waffle Hack Submission
 Record your mood through our song selections
 
 ![Screen Shot 2022-06-19 at 11 31 35 PM](https://user-images.githubusercontent.com/74251221/174491109-e8f16f14-1231-4e99-8a06-01222ff85b5f.png)
