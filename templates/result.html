@@ -1,0 +1,37 @@
+{% extends "index.html" %}
+{% block body %}
+ 
+<div class="welcome">
+    <p id="first">Welcome to</p>
+    <p id="title">MoodRecord</p>
+    <p id="intro">Record your daily mood through songs</p>
+</div>
+
+<h2>Your playlist for today is created! Open your spotify app to check it out!</h2>
+
+<div class="reflection">
+	<form>
+		<p>Optional: send an email to yourself about how today was like</p>
+	
+		<p>What happened during the day that led to my previous answers?</p>
+		<input type="text" name="first_reflect">
+	
+		<p>What's my most relatable song in today's playlist? In what way do I relate to it?</p>
+		<input type="text" name="third_reflect">
+	
+		<p>What way do I notice about the world around me right now?</p>
+		<input type="text" name="fourth_reflect">
+	
+		<p>What things/who can I let go of and what things/who am I grateful for today?</p>
+		<input type="text" name="fifth_reflect">
+	
+		<p>Any further note to self? :)</p>
+		<input type="text" name="sixth_reflect">
+	
+		<a href="{{email}}?subject: Letter to self">Send :)</a>
+	</form>
+</div>
+
+
+
+{% endblock %}

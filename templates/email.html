@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block body %}
+ 
+<div class="welcome">
+    <p id="first">Welcome to</p>
+    <p id="title">MoodRecord</p>
+    <p id="intro">Record your daily mood through songs</p>
+</div>
+
+<h2>Your playlist for today is created! Open your spotify app to check it out!</h2>
+
+<div class="reflection">
+	<form method="POST" action=#>
+		<p>Optional: send an email to yourself about how today was like</p>
+        <input type="email" name="email">
+        <input type="submit"/>
+        
+	</form>
+</div>
+
+
+
+{% endblock %}

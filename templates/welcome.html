@@ -1,0 +1,34 @@
+{% extends 'index.html' %}
+
+{% block head %}
+    
+{% endblock %} 
+
+{% block body %}
+
+<div class="welcome">
+    <p id="first">Welcome to</p>
+    <p id="title">MoodRecord</p>
+    <p id="intro">Record your daily mood through songs</p>
+</div>
+
+<form method="POST" action="/">
+    
+    <div class="additional" id="finalize">
+        <h3>Please enter your spotify username!</h3>
+        <p>Make sure you have logged into your spotify on your device!</p>
+        <p>Your username can be found by going into your Spotify App, going to the top-right corner, clicking the drop-down menu, and selecting 'account' </p>
+            <input name='username'>
+            <input type="submit"/>
+        
+    </div>
+      
+</form>
+  
+
+    
+
+
+
+
+{% endblock %} 

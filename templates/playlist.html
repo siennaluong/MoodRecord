@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block head %}
+    
+{% endblock %} 
+
+{% block body %}
+<div class="welcome">
+    <p id="first">Welcome to</p>
+    <p id="title">MoodRecord</p>
+    <p id="intro">Record your daily mood through songs</p>
+</div>
+
+<script src="../static/js/click.js"></script>
+<script src="../static/js/slider.js"></script>
+<h2>To create your playlist, please slide the bar to describe to us how...</h2>
+<form method="POST" action=#>
+    <div class="first_part">
+    
+        <p>your day was:</p>
+            <input name="mood" type="range" min="0" max="100" value="50" class="slider" id="myRange">
+    
+        <p>energetic you are right now:</p>
+            <input name="energy" type="range" min="0" max="100" value="50" class="slider" id="myRange"> 
+        
+        <p>much you feel like dancing:</p>
+            <input name="dance" type="range" min="0" max="100" value="50" class="slider" id="myRange">
+                 
+        <p>Bonus: how many songs you want to see in the playlists that you have never listened to:</p>
+            <input name="num" type="range" min="0" max="100" value="50" class="slider" id="myRange">  
+            <input type="submit" onclick="showDiv()"/>
+            
+    </div>
+
+</form>
+
+<div id="load" style="display:none;" class="loader"></div>
+
+{% endblock %} 
